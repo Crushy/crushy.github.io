@@ -14,50 +14,9 @@ body {
     font-weight: lighter;
     font-family: sans-serif;
     
-    //background-color: #3e3e3e;
     background-color: white;
-}
-
-a {
-    color:inherit;
-    text-decoration: none;
-}
-
-/*Text*/
-.small {
-    font-size: 75%;
-}
-
-.red {
-    color: indianred;
-}
-
-.green {
-    color: limegreen;
-}
-
-.blue {
-    color:lightskyblue;
-}
-
-.purple {
-    color:mediumvioletred;
-}
-
-.pink {
-    color:hotpink;
-}
-
-.orange {
-    color:orange;
-}
-
-.brown {
-    color:saddlebrown;
-}
-
-.coral {
-    color:coral;
+    
+    //width: 100%;
 }
 
 /*Header*/
@@ -65,7 +24,7 @@ header {
     position:relative;
     
     /*Positioning and size*/
-    height: 7em;
+    height: 8em;
     width: 100%;
     
     background-color: rgb(106, 106, 106);
@@ -83,24 +42,37 @@ header>div {
     
     position: absolute;
     top: 50%;
-    left: 50%;
+    //left: 50%;
+    padding-left:400px;
+    text-align: left;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+    //transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     
 }
 
-header > h1, header>h2{
+header > div > .name, .header> div > .job{
     font-family: sans-serif;
 }
 
-header > h1 {
-    font-size: 350%;
+header > div > .name {
+    font-size: 250%;
     font-weight: lighter;
 }
 
-header > h2 {
-    font-size: 200%;
+header > div > .job {
+    font-size: 100%;
     font-weight: lighter;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+/*Text*/
+.small {
+    font-size: 75%;
 }
 
 /*Aside*/
@@ -128,6 +100,7 @@ aside {
     background-color: rgb(106, 106, 106);
     
     border-radius: 0px 0px 15px 0px;
+    
 }
 
 aside>* {
@@ -140,7 +113,8 @@ aside > h2 {
 }
 
 aside > .hiddenBySummary {
-    height: 7em;
+    //height: 7em;
+    padding-bottom: 20px;
 }
 
 
@@ -152,14 +126,16 @@ aside>ul, aside > .hiddenBySummary>ul {
 }
 
 /*Content*/
-content {
+.content {
+    
     /*Positioning*/
     position: absolute;
-    top: 7em;
     
-    left: 15em;
-    padding: 20px 60px 150px 20px;
+    margin: 0px;
+    padding: 0px;
+    left: 13.5em;
     
+    z-index: -3;
     
 }
 
@@ -168,26 +144,31 @@ content {
     font-weight: bold;
 }
 
-content > p {
-    text-indent: 20px;
+/*skills highlighting*/
+.Csharp{
+    background-color:aqua;
 }
-
-content > h1{
-    padding-top:1.0em;
-}
-
-
-bold {
-    display:inline;
-    font-weight: bold;
-}
-
 
 /*Responsiveness*/
 @media screen and (max-height: 800px) {
     
     aside{
         position:absolute;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    aside{
+        display: none;
+    }
+    
+    header > div {
+        padding-left: 25px;
+    }
+    
+    .content{
+        left:0px;
     }
 }
 
@@ -219,3 +200,160 @@ bold {
     }
 
 }
+
+/****************/
+
+h1 {
+    position: relative;
+    left: -30px;
+    max-width: 220px;
+    text-align: right;
+    font-size: 1.4em;
+    //background-color: aqua;
+    margin-top: 40px;
+}
+
+/*education*/
+.education > h1 {
+    color: skyblue;
+}
+.education > .cv-item > .cv_period:after {
+    background-color: skyblue;
+}
+
+/*experience*/
+.experience > h1 {
+    color: hotpink;
+}
+.experience > .cv-item > .cv_period:after {
+    background-color: hotpink;
+}
+
+/*projects*/
+.projects > h1 {
+    color: limegreen;
+}
+.projects > .cv-item > .cv_period:after {
+    background-color: limegreen;
+}
+
+
+/*short courses*/
+.shortCourses > h1 {
+    color: orange;
+}
+.shortCourses > .cv-item > .cv_period:after {
+    background-color: orange;
+}
+
+/*certification*/
+.certification > h1 {
+    color: coral;
+}
+.certification > .cv-item > .cv_period:after {
+    background-color: coral;
+}
+
+/*talks*/
+.talks>h1 {
+    color:skyblue;
+}
+.talks > .cv-item > .cv_period:after {
+    background-color: skyblue;
+}
+
+/*conferences*/
+.conferences>h1 {
+    color:mediumvioletred;
+}
+.conferences > .cv-item > .cv_period:after {
+    background-color: mediumvioletred;
+}
+
+
+/*Interests*/
+.interests>h2 {
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.interests>p {
+    margin-left: 170px;
+    padding-left: 10px;
+}
+
+.interests > .cv-item > .cv_period:after {
+    background-color:saddlebrown;
+}
+
+.interests > h1 {
+    color:saddlebrown;
+}
+
+/*CV main content structure*/
+.cv_period:after {
+    
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: .4em;
+    //top:-2px;
+    left: 120px;
+    border-radius: 100px 100px 100px 100px;
+    background-color: darkgray;
+}
+
+.cv-item {
+    width: auto;
+    position: relative;
+    margin-left: 70px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+    display: table;
+    
+    //width: 700px;
+}
+
+.cv_period {
+    font-size: .8em;
+    
+    text-align: right;
+    padding-right: 25px;
+    width:100px;
+    display: table-cell;
+    vertical-align: text-top;
+    
+}
+
+.cv_details {
+    font-size: .9em;
+    color:darkslategray;
+}
+
+
+.cv_title {
+    //color:black;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.cv_title>bold {
+    font-weight: 700;
+}
+
+.description > ul {
+    
+    padding-left: 40px;
+    line-height: normal;
+}
+
+.description>p {
+    font-size: .9em;
+    margin-top: 5px;
+    text-indent: 20px;
+    //background-color:aqua;
+}
+

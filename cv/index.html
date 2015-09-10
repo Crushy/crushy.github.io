@@ -19,16 +19,16 @@
 <body>
     <header>
         <div>
-            <h1>Pedro Caetano</h1>
-            <h2>Game Design, Programming and Other cool stuff</h2>
+            <div class="name">Pedro Caetano</div>
+            <div class="title">Game Design, Programming and Other cool stuff</div>
         </div>
     </header>
     
     <aside>
         <div class="hiddenBySummary">
             <ul>
-                <li><span style="font-weight:bold; font-size:120%;">Pedro Caetano</span></li>
-                <li>Game Design, Programming and Other cool stuff</li>
+                <li><span style="font-weight:700; font-size:150%;">Pedro Caetano</span></li>
+                <li style="padding-bottom:5px;">Game Design, Programming and Other cool stuff</li>
                 <li>Born in 1989</li>
                 <li>Living in Coimbra, Portugal</li>
             </ul>
@@ -53,12 +53,12 @@
 
         <h2>languages</h2>
             <ul>
-                <li>portuguese :  <span class="green" style="font-size:1.25em;">●●●●●</span></li>
-                <li>english    :  <span class="green" style="font-size:1.25em;">●●●●●</span></li>
-                <li>french     :  <span class="blue" style="font-size:1.25em;">●●●○○</span></li>
-                <li>spanish    :  <span class="blue" style="font-size:1.25em;">●●○○○</span></li>
-                <li>german     :  <span class="pink" style="font-size:1.25em;">●○○○○</span></li>
-                <li>japanese   :  <span class="pink" style="font-size:1.25em;">○○○○○</span></li>
+                <li>portuguese :  <span style="color:limegreen; font-size:1.25em;">●●●●●</span></li>
+                <li>english    :  <span style="color:limegreen; font-size:1.25em;">●●●●●</span></li>
+                <li>french     :  <span style="color:skyblue; font-size:1.25em;">●●●○○</span></li>
+                <li>spanish    :  <span style="color:skyblue; font-size:1.25em;">●●○○○</span></li>
+                <li>german     :  <span style="color:hotpink; font-size:1.25em;">●○○○○</span></li>
+                <li>japanese   :  <span style="color:hotpink; font-size:1.25em;">○○○○○</span></li>
             </ul>
 
         <h2>programming</h2>
@@ -81,68 +81,55 @@
 
     </aside>
     
-    <content>
-        <h1 class="blue">education</h1>
+    <div class="content">
         
-        <table class="tg">
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2014-2015</td>
-                <td class="name">Master’s degree (Suspended) in <bold>Digital Game Design and Development</bold></td>
-                <td class="location">Univ. of Beira Interior</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Mestrado em Design e Desenvolvimento de Jogos Digitais</td>
-            </tr>
+        <div class="education">
+            <h1>education</h1>
+            <div class="cv-item" style="//display:none">
+                <div class="cv_period">2014-2015</div>
+                <div class="cv_title">Master’s degree (Suspended) in <bold>Digital Game Design and Development</bold></div>
+                <div class="cv_details">Univ. of Beira Interior</div>
+
+                <div class="description">
+                     "Mestrado em Design e Desenvolvimento de Jogos Digitais"
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv_period">2008-2014</div>
+                <div class="cv_title">Bachelor’s degree in <bold>Computer Science</bold></div>
+
+                <div class="cv_details">Univ. of Coimbra</div>
+
+
+                <div class="description">
+                     "Licenciatura em Engenharia Informática"
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv_period">2004-2007</div>
+                <div class="cv_title">High School in <bold>Sciences and Technology</bold></div>
+
+                <div class="cv_details">E.S. D. Duarte</div>
+
+                <div class="description">
+                     "Ensino Secundário em Ciências e Tecnologias."
+                </div>
+            </div>
+        </div>
+        
+        <div class="experience">
+        <h1>experience</h1>
+        
+        <div class="cv-item">
+            <div class="cv_period">2010-Now</div>
+            <div class="cv_title">Manager, Game Designer, Programmer, VFX artist, among others at <bold>Titan Forged Games</bold></div>
             
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2008-2014</td>
-                <td class="name">Bachelor’s degree in <bold>Computer Science</bold></td>
-                <td class="location">University of Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Licenciatura em Engenharia Informática</td>
-            </tr>
+            <div class="cv_details">Titan Forged Games, videogame startup from Coimbra</div>
             
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2014-2015</td>
-                <td class="name"><bold>Secondary Education</bold> in Sciences and Technology</td>
-                <td class="location">E.S. D. Duarte</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2"></td>
-            </tr>
-        </table>
-        
-        
-        
-        
-        <h1 class="pink">experience</h1>
-        <table class="tg">
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2010-Now</td>
-                <td class="name"><bold>Titan Forged Games</bold></td>
-                <td class="location">videogame startup from Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Manager, Game Designer, Programmer, VFX artist, among others</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">
-                    <p>Worked on all aspects game development including:</p>
-                    
+            <div class="description">
+                 <p>Worked on all aspects game development including:</p>
                     <ul>
                         <li>game design and level design</li>
                         <li>programming, and A.I. scripting</li>
@@ -153,343 +140,239 @@
                         <li>Sound design and editing</li>
                         <li>Team management and work-flow design</li>
                     </ul>
-                
-                
-                </td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Jan–Jul 2015</td>
-                <td class="name"><bold>Research Investigator</bold></td>
-                <td class="location">University of Coimbra - IBILI</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Project design and execution</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">I was given the task of designing and developing a game that would make it
-fun for autistic children to learn how to interpret visual attentive cues.</td>
-            </tr>
-        </table>
+            </div>
+        </div>
         
+        <div class="cv-item">
+            <div class="cv_period">Jan–Jul 2015</div>
+            <div class="cv_title">Project design and execution as a <bold>Research Investigator</bold></div>
+            <div class="cv_details">University of Coimbra - IBILI</div>
+            <div class="description">
+                 <p>I was given the task of designing and developing a game that would make it
+fun for autistic children to learn how to interpret visual attentive cues.</p>
+            </div>
+        </div>
+        </div>
         
-        <h1 class="green">small projects</h1>
-        <table class="tg">
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Jan-Jul 2015</td>
-                <td class="name"><bold>Searching Drones</bold></td>
-                <td class="location">Research project</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">
-                    <p>An attempt at making a fun serious game, targeted at children with autism</p>
-and designed to teach visual attentive cues.</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr> 
-                <td class="duration" rowspan="3">Jan 2015</td>
-                <td class="name"><bold>GATO</bold></td>
-                <td class="location">Gamedev tool</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Small QT Python script to aid in several repetitive gamedev tasks <a href="http://github.com/Crushy/GATO">(github.com/Crushy/GATO)</a>.</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Aug 2013-Nov 2014</td>
-                <td class="name"><bold>Slinki</bold></td>
-                <td class="location">Released game</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Available on Steam and Desura</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">2.5D platformer with a unique boomerang-like weapon <a href="http://titanforgedgames.com/slinki">(titanforgedgames.com/slinki)</a>.</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Aug 2013</td>
-                <td class="name"><bold>Poultron</bold></td>
-                <td class="location">Game Prototype</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Small qwop-clone prototype for internal Titan Forged Games Jam. Play it at
-<a href="http//crushy.itch.io/poultron">crushy.itch.io/poultron</a>.</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Nov 2013</td>
-                <td class="name"><bold>Business presentation</bold></td>
-                <td class="location">CEARTE, Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Titan Forged Games project reached finals at a business ideas contest.</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Dec 2011</td>
-                <td class="name"><bold>Yar’s world</bold></td>
-                <td class="location">University of Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Design Pattern usage prototype</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">The final project for an extra-curricular class in design pattern usage <a href="http://crushy.itch.io/yars-world">(crushy.itch.io/yars-world)</a>.</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2009</td>
-                <td class="name"><bold>Portuguese translation of Warzone 2100</bold></td>
-                <td class="location">Open-source game project</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Finished translating the game Warzone 2100 into Portuguese.</td>
-            </tr>
-        </table>
+        <div class="projects">
+        <h1>projects</h1>
+            <div class="cv-item">
+                <div class="cv_period">Jan-Jul 2015</div>
+                <div class="cv_title"><bold>Searching Drones</bold></div>
+
+                <div class="cv_details">Research project</div>
+
+                <div class="description">
+                     <p>An attempt at making a fun serious game, targeted at children with autism
+    and designed to teach visual attentive cues.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Jan 2015</div>
+                <div class="cv_title"><bold>GATO</bold></div>
+
+                <div class="cv_details">Gamedev toolt</div>
+
+                <div class="description">
+                     <p>Small QT Python script to aid in several repetitive gamedev tasks <a href="http://github.com/Crushy/GATO">(github.com/Crushy/GATO)</a>.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Aug 2013-Nov 2014</div>
+                <div class="cv_title">Released game on Steam and Desura, <bold>Slinki</bold></div>
+                <div class="cv_details">Released game</div>
+                <div class="description">
+                     <p>2.5D platformer with a unique boomerang-like weapon <a href="http://titanforgedgames.com/slinki">(titanforgedgames.com/slinki)</a>.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Aug 2013</div>
+                <div class="cv_title"><bold>Poultron</bold></div>
+                <div class="cv_details">Game Prototype</div>
+                <div class="description">
+                     <p>Small qwop-clone prototype for internal Titan Forged Games Jam. Play it at
+    <a href="http//crushy.itch.io/poultron">crushy.itch.io/poultron</a>.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Dec 2011</div>
+                <div class="cv_title">Design Pattern usage prototype, <bold>Yar’s world</bold></div>
+                <div class="cv_details">University of Coimbra</div>
+                <div class="description">
+                     <p>The final project for an extra-curricular class in design pattern usage <a href="http://crushy.itch.io/yars-world">(crushy.itch.io/yars-world)</a>.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">2009</div>
+                <div class="cv_title"><bold>Portuguese translation of Warzone 2100</bold></div>
+                <div class="cv_details">Open-source game project</div>
+                <div class="description">
+                     <p>Finished translating the game Warzone 2100 into Portuguese.</p>
+                </div>
+            </div>
+        </div>
         
-        <h1 class="orange">short courses</h1>
-        <table class="tg">
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2015</td>
-                <td class="name"><bold>Magic in the Middle Ages</bold></td>
-                <td class="location">Coursera</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Online class</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2"></td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2014</td>
-                <td class="name"><bold>Serious Game Design and Development </bold></td>
-                <td class="location">iversity</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Online class</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2"></td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2013-2014</td>
-                <td class="name"><bold>German I and II </bold></td>
-                <td class="location">University of Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Attended classes from a Bachelor’s degree in Modern Languages</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Jul 2013</td>
-                <td class="name"><bold>Empreendedorismo - projeto microempresas</bold></td>
-                <td class="location">CEARTE, Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">One-week crash-course on creating a small enterprise</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2"></td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Feb 2012</td>
-                <td class="name"><bold>Screenplay writing course</bold></td>
-                <td class="location">University of Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">A short 2-day cinema screenplay writing course during “Caminhos do Cinema Português”</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2008-2009</td>
-                <td class="name"><bold>Japanese Culture and Language I and II</bold></td>
-                <td class="location">University of Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">A one-year Japanese course</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2"></td>
-            </tr>
-            
-        </table>
+        <div class="shortCourses">
+            <h1>short courses</h1>
+            <div class="cv-item">
+                <div class="cv_period">2015</div>
+                <div class="cv_title">Online class, <bold>Magic in the Middle Ages</bold></div>
+                <div class="cv_details">Coursera</div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">2014</div>
+                <div class="cv_title">Online class, <bold>Serious Game Design and Development </bold></div>
+                <div class="cv_details">iversity</div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">2013-2014</div>
+                <div class="cv_title"><bold>German I and II </bold></div>
+                <div class="cv_details">University of Coimbra</div>
+                <div class="description">
+                     <p>Attended classes from a Bachelor’s degree in Modern Languages.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Jul 2013</div>
+                <div class="cv_title"><bold>Empreendedorismo - projeto microempresas</bold></div>
+                <div class="cv_details">CEARTE, Coimbra</div>
+                <div class="description">
+                     <p>One-week crash-course on creating a small enterprise.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Feb 2012</div>
+                <div class="cv_title"><bold>Screenplay writing course</bold></div>
+                <div class="cv_details">University of Coimbra</div>
+                <div class="description">
+                     <p>A short 2-day cinema screenplay writing course during “Caminhos do Cinema Português”.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">2008-2009</div>
+                <div class="cv_title"><bold>Japanese Culture and Language I and II</bold></div>
+                <div class="cv_details">University of Coimbra</div>
+                <div class="description">
+                     <p>A one-year Japanese language course.</p>
+                </div>
+            </div>
+        </div>
         
-        
-        <h1><span class="coral">certification</span></h1>
-        <table class="tg">
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2007</td>
-                <td class="name"><bold>Diplôme de Langue Française Niveau B2 du Conseil de l’Europe</bold></td>
-                <td class="location">Alliance
-Française</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Council of Europe level: B2</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2"></td>
-            </tr>
+        <div class="certification">
+            <h1>certification</h1>
+            <div class="cv-item">
+                <div class="cv_period">2007</div>
+                <div class="cv_title"><bold>Diplôme de Langue Française Niveau B2 du Conseil de l’Europe</bold></div>
+                <div class="cv_details">Alliance
+Française</div>
+                <div class="description">
+                     <p>Council of Europe level: B2</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">2007</div>
+                <div class="cv_title"><bold>Level 2 Certificate in English (CAE)</bold></div>
+                <div class="cv_details">Cambridge University</div>
+                <div class="description">
+                     <p>Council of Europe level: C1</p>
+                </div>
+            </div>
+        </div>
             
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">2006</td>
-                <td class="name"><bold>Level 2 Certificate in English (CAE)</bold></td>
-                <td class="location">Cambridge University</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2">Council of Europe level: C1</td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2"></td>
-            </tr>
-        </table>
+        <div class="talks">
+            <h1>talks and presentations</h1>
+            <div class="cv-item">
+                <div class="cv_period">27 Mar 2015</div>
+                <div class="cv_title"><bold>Lições de uma startup de jogos</bold></div>
+                <div class="cv_details">University of Beira Interior</div>
+                <div class="description">
+                     <p>A talk about what the Titan Forged Games Team learned during it's first year.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Nov 2013</div>
+                <div class="cv_title"><bold>Business Idea Contest</bold></div>
+                <div class="cv_details">CEARTE, Coimbra</div>
+                <div class="description">
+                     <p>Presented the Titan Forged games business concept at a startup idea contest. Reached the finals.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Jul 2011</div>
+                <div class="cv_title"><bold>Oral Presentation of Project</bold></div>
+                <div class="cv_details">Univ. of Coimbra</div>
+                <div class="description">
+                     <p>Presented a project to create a database for all games produced by the University of Coimbra.</p>
+                </div>
+            </div>
+        </div>
         
+        <div class="conferences">
+            <h1>attended conferences and events</h1>
+            <div class="cv-item">
+                <div class="cv_period">Sep 2015</div>
+                <div class="cv_title"><bold>Microsoft Game Dev Camp 2015</bold></div>
+                <div class="cv_details">Microsoft Portugal</div>
+                <div class="description">
+                    <p>Game Developer-only conference hosted by Microsoft.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Jul 2014</div>
+                <div class="cv_title"><bold>Microsoft Game Dev Camp 2014</bold></div>
+                <div class="cv_details">Microsoft Portugal</div>
+                <div class="description">
+                    <p>Game Developer-only conference hosted by Microsoft.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Nov 2013</div>
+                <div class="cv_title"><bold> Conferência de Ciências e Artes dos Videojogos</bold></div>
+                <div class="cv_details">Univ. of Coimbra</div>
+                <div class="description">
+                    <p>Annual Portuguese Society of Videogame Sciences conference.</p>
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Apr 2012</div>
+                <div class="cv_title"><bold>Portugal Youth to Business Forum </bold></div>
+                <div class="cv_details">Univ. of Lisbon</div>
+                <div class="description">
+                </div>
+            </div>
+            <div class="cv-item">
+                <div class="cv_period">Nov 2009</div>
+                <div class="cv_title"><bold> Conferência de Ciências e Artes dos Videojogos</bold></div>
+                <div class="cv_details">Univ. of Aveiro</div>
+                <div class="description">
+                    <p>Annual Portuguese Society of Videogame Sciences conference.</p>
+                </div>
+            </div>
+        </div>
         
-        <h1><span class="purple">conferences and events</span></h1>
-        <table class="tg">
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Jul 2014</td>
-                <td class="name"><bold>Microsoft Game Dev Camp</bold></td>
-                <td class="location">Microsoft Portugal</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Game Developer conference hosted by Microsoft’s Portuguese division</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Nov 2013</td>
-                <td class="name"><bold> Conferência de Ciências e Artes dos Videojogos</bold></td>
-                <td class="location">Univ. of Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Annual Portuguese Society of Videogame Sciences conference</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Apr 2012</td>
-                <td class="name"><bold>Portugal Youth to Business Forum </bold></td>
-                <td class="location">Univ. of Lisbon</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Annual Portuguese Society of Videogame Sciences conference</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Nov 2009</td>
-                <td class="name"><bold> Conferência de Ciências e Artes dos Videojogos</bold></td>
-                <td class="location">Univ. of Aveiro</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Annual Portuguese Society of Videogame Sciences conference</td>
-            </tr>
-        </table>
-        
-        <h1><span class="blue">communication skills</span></h1>
-        <table class="tg">
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">27 Mar 2015</td>
-                <td class="name"><bold>Lições de uma startup de jogos</bold></td>
-                <td class="location">University of Beira Interior</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Talk about difficulties and things we learned as a videogame startup.</td>
-            </tr>
-            
-            <tr class="blank_row"></tr>
-            <tr>
-                <td class="duration" rowspan="3">Jul 2011</td>
-                <td class="name"><bold>Oral Presentation of Project</bold></td>
-                <td class="location">Univ. of Coimbra</td>
-            </tr>
-            <tr>
-                <td class="details" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="description" colspan="2">Presented a project to create a database for all games produced by the
-University of Coimbra</td>
-            </tr>
-            
-        </table>
-        
-        
-        <h1 class="brown">interests</h1>
+        <div class="interests">
+            <h1>interests</h1>
             <br>
             <h2 class="subtitle">professional:</h2>
             <p> game design, management, entrepreneurship, software engineering,
     simulation, games as an art form</p>
-                
+
             <h2 class="subtitle">personal:</h2><p>design, HEMA, (military) history, linguistics, wargames, games in general (digital or otherwise)</p>
-        
-            <h2 class="subtitle"><span style="color:red;">♥</span>games:</h2>
+
+            <h2 class="subtitle"><span style="color:red; font-size:1.5em;">♥ </span>games:</h2>
             <p>Civilization, Total War (from Rome and beyond), X-Com, Dawn of War, Age of Empires, Morrowind, Saints Row, Wargame, Ruse, Defcon, War thunder, Red Orchestra, Red Alert, Metal Gear Solid 4, Crimson Skies, Ground Control 1, Terraria, Dwarf Fortress, a lot of sandbox simulator games</p>
-        
+
             <h2 class="subtitle">currently playing:</h2>
             <p> Warframe, Lords of the Fallen, Company of Heroes 2, Assassin’s
     Creed 2</p>
+        </div>
         
         
-        
-    </content>
+    </div>
     
 </body>
 </html>
