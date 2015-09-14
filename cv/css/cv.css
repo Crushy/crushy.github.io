@@ -2,6 +2,7 @@
 * {
     margin: 0; border: 0; padding: 0;
     //font-size: 1.1em;
+    //page-break-inside: avoid;
 }
 
 p {
@@ -152,6 +153,8 @@ aside>ul, aside > .hiddenBySummary>ul {
 /****************/
 
 h1 {
+    page-break-inside: avoid;
+    
     position: relative;
     left: -30px;
     max-width: 220px;
@@ -241,12 +244,11 @@ h1 {
 
 /*CV main content structure*/
 .cv_period:after {
-    
     content: "";
     position: absolute;
     height: 100%;
     width: .4em;
-    //top:-2px;
+    top:0px;
     left: 120px;
     border-radius: 100px 100px 100px 100px;
     background-color: darkgray;
@@ -262,7 +264,7 @@ h1 {
     
     display: table;
     
-    //width: 700px;
+    page-break-inside: avoid;
 }
 
 .cv_period {
@@ -312,7 +314,6 @@ h1 {
         position:absolute;
     }
 }
-
 @media screen and (max-width: 800px) {
     
     aside{
@@ -329,29 +330,51 @@ h1 {
 }
 
 /*Printing*/
-@media print {
+@media screen {
     
     header {
         display: none;    
     }
-    //
+    
     content {
-        top:0px;    
+        //top:0px;    
     }
     
     aside {
+        padding-left: 0px;
+        //right: -50px;
+        //width: 220px;
+        //border-radius: 15px 15px 15px 15px;
+        background-color: white;
+        
+    }
+    aside>* {
+        color: #414141;    
+    }
+    aside>h2 {
+        color: #414141;    
+    }
+    
+    aside:after {
+        content: "";
         position: absolute;
+        height: 100%;
+        width: .4em;
+        top:15px;
+        right: -4px;
+        border-radius: 100px 100px 100px 100px;
+        background-color: darkgray;
     }
     
     /*for some reason we can't outright replace <a> with just the href on firefox*/
-    a {
-        //display:none;
-        content: "";
+    a>*, a {
+        //content: none;
     }
     
     a:after {
-        //display:inline;
-        content: "\a" attr(href);
+        word-wrap: break-word;
+        //content: "\A" attr(href);
+        white-space:pre-wrap;
         font-size: 70%;
     }
 
