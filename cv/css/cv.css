@@ -149,58 +149,6 @@ aside>ul, aside > .hiddenBySummary>ul {
     background-color:aqua;
 }
 
-/*Responsiveness*/
-@media screen and (max-height: 800px) {
-    
-    aside{
-        position:absolute;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    
-    aside{
-        display: none;
-    }
-    
-    header > div {
-        padding-left: 25px;
-    }
-    
-    .content{
-        left:0px;
-    }
-}
-
-/*Printing*/
-@media print {
-    
-    header {
-        display: none;    
-    }
-    
-    content {
-        top:0px;    
-    }
-    
-    aside {
-        position: absolute;
-    }
-    
-    /*for some reason we can't outright replace <a> with just the href on firefox*/
-    a {
-        //display:none;
-        content: "";
-    }
-    
-    a:after {
-        //display:inline;
-        content: "\a" attr(href);
-        font-size: 70%;
-    }
-
-}
-
 /****************/
 
 h1 {
@@ -357,3 +305,54 @@ h1 {
     //background-color:aqua;
 }
 
+/*Responsiveness*/
+@media screen and (max-height: 800px) {
+    
+    aside{
+        position:absolute;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    aside{
+        display: none;
+    }
+    
+    header > div {
+        padding-left: 25px;
+    }
+    
+    .content{
+        left:0px;
+    }
+}
+
+/*Printing*/
+@media print {
+    
+    header {
+        display: none;    
+    }
+    //
+    content {
+        top:0px;    
+    }
+    
+    aside {
+        position: absolute;
+    }
+    
+    /*for some reason we can't outright replace <a> with just the href on firefox*/
+    a {
+        //display:none;
+        content: "";
+    }
+    
+    a:after {
+        //display:inline;
+        content: "\a" attr(href);
+        font-size: 70%;
+    }
+
+}
