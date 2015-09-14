@@ -330,7 +330,7 @@ h1 {
 }
 
 /*Printing*/
-@media screen {
+@media print {
     
     header {
         display: none;    
