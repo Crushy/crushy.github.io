@@ -341,6 +341,7 @@ h1 {
     }
     
     aside {
+		position:absolute;
         padding-left: 0px;
         //right: -50px;
         //width: 220px;
