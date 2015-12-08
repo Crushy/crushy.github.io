@@ -68,7 +68,7 @@ header > div > .job {
 
 a {
     color:inherit;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*Text*/
@@ -134,7 +134,7 @@ aside>ul, aside > .hiddenBySummary>ul {
     
     margin: 0px;
     padding: 0px;
-    left: 13.5em;
+    left: 15.5em;
     
     z-index: -3;
     
@@ -152,11 +152,9 @@ aside>ul, aside > .hiddenBySummary>ul {
 
 /****************/
 
-h1 {
-    page-break-inside: avoid;
-    
+.content>*>h1 {
     position: relative;
-    left: -30px;
+    left: -100px;
     max-width: 220px;
     text-align: right;
     font-size: 1.4em;
@@ -257,14 +255,13 @@ h1 {
 .cv-item {
     width: auto;
     position: relative;
-    margin-left: 70px;
+    margin-left: 0px;
     padding-left: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
     
     display: table;
-    
-    page-break-inside: avoid;
+    page-break-inside: avoid !important;
 }
 
 .cv_period {
@@ -336,10 +333,6 @@ h1 {
         display: none;    
     }
     
-    content {
-        //top:0px;    
-    }
-    
     aside {
 		position:absolute;
         padding-left: 0px;
@@ -347,8 +340,8 @@ h1 {
         //width: 220px;
         //border-radius: 15px 15px 15px 15px;
         background-color: white;
-        
     }
+    
     aside>* {
         color: #414141;    
     }
@@ -378,5 +371,18 @@ h1 {
         white-space:pre-wrap;
         font-size: 70%;
     }
+    
+    
+}
 
+/*Manually aligning because wkhtml is being a bitch (I'm sorry)*/
+.experience:before {
+    content:"\A";
+    white-space:pre;
+}
+
+.certification::before {
+    page-break-before: always !important;
+    content:"\A";
+    white-space:pre; 
 }
