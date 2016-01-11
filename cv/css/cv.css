@@ -304,6 +304,10 @@ aside>ul, aside > .hiddenBySummary>ul {
     //background-color:aqua;
 }
 
+.description>p>b {
+	font-weight: bold;
+}
+
 /*Responsiveness*/
 @media screen and (max-height: 800px) {
     
