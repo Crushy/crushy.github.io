@@ -154,9 +154,9 @@ aside>ul, aside > .hiddenBySummary>ul {
 
 .content>*>h1 {
     position: relative;
-    left: -100px;
+    left: 125px;
     max-width: 220px;
-    text-align: right;
+    text-align: left;
     font-size: 1.4em;
     //background-color: aqua;
     margin-top: 40px;
@@ -228,12 +228,7 @@ aside>ul, aside > .hiddenBySummary>ul {
 }
 
 .interests>p {
-    margin-left: 170px;
-    padding-left: 10px;
-}
-
-.interests > .cv-item > .cv_period:after {
-    background-color:saddlebrown;
+    margin-left: 130px;
 }
 
 .interests > h1 {
@@ -253,15 +248,15 @@ aside>ul, aside > .hiddenBySummary>ul {
 }
 
 .cv-item {
+	page-break-inside: avoid !important;  
+	display: table;
     width: auto;
     position: relative;
     margin-left: 0px;
     padding-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     
-    display: table;
-    page-break-inside: avoid !important;
 }
 
 .cv_period {
@@ -278,6 +273,10 @@ aside>ul, aside > .hiddenBySummary>ul {
 .cv_details {
     font-size: .9em;
     color:darkslategray;
+}
+
+.cv_details>b {
+	font-weight: bold;
 }
 
 
@@ -304,7 +303,7 @@ aside>ul, aside > .hiddenBySummary>ul {
     //background-color:aqua;
 }
 
-.description>p>b {
+.description>p>b, .description>b {
 	font-weight: bold;
 }
 
@@ -375,18 +374,13 @@ aside>ul, aside > .hiddenBySummary>ul {
         white-space:pre-wrap;
         font-size: 70%;
     }
-    
-    
 }
 
 /*Manually aligning because wkhtml is being a bitch (I'm sorry)*/
+
 .experience:before {
+	page-break-before: always !important;
     content:"\A";
     white-space:pre;
 }
 
-.certification::before {
-    page-break-before: always !important;
-    content:"\A";
-    white-space:pre; 
-}
