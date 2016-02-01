@@ -308,7 +308,7 @@ aside>ul, aside > .hiddenBySummary>ul {
 }
 
 /*Responsiveness*/
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 1000px) {
     
     aside{
         position:absolute;
