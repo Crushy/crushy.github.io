@@ -308,12 +308,16 @@ aside>ul, aside > .hiddenBySummary>ul {
 }
 
 /*Responsiveness*/
-@media screen and (max-height: 1000px) {
-    
+@media screen and (max-height: 900px) {
+    header {
+		display:none;
+	}
+	
     aside{
         position:absolute;
     }
 }
+
 @media screen and (max-width: 800px) {
     
     aside{
@@ -329,9 +333,17 @@ aside>ul, aside > .hiddenBySummary>ul {
     }
 }
 
+
 /*Printing*/
 @media print {
-    
+    /*Display the phone number*/
+	#phnum a {
+		display:none;
+	}
+	#phnum:before{
+		//content: "TODO: put the phone number here but don't submit it in plain text"
+	}
+	
     header {
         display: none;    
     }
@@ -380,7 +392,7 @@ aside>ul, aside > .hiddenBySummary>ul {
 
 .experience:before {
 	page-break-before: always !important;
-    content:"\A";
+    content:"\A\A\A\A\A\A\A\A";
     white-space:pre;
 }
 
