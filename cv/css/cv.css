@@ -392,7 +392,13 @@ aside>ul, aside > .hiddenBySummary>ul {
 
 .experience:before {
 	page-break-before: always !important;
-    content:"\A\A\A\A\A\A\A\A";
+    content:"\A";
+    white-space:pre;
+}
+
+.talks:before {
+	page-break-before: always !important;
+    content:"\A\A\A\A\A\A";
     white-space:pre;
 }
 
